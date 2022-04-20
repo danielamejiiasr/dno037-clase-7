@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #ddd;
+    background: #25244E url(img/fondo.png) no-repeat right bottom;
+    background-size: 100% auto;
+    padding-bottom:10vw;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 100%;
+}
+
+a {
+    color: rgba(255,255,255,0.5);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+}
+
+div.container{
+    padding:0 5vw 5vh;
+}
+
+header, footer{
+    padding:4% 2%;
+}
+
+header, svg{
+  margin-bottom:-3px;
+  margin-right:9px;
+  margin-left:-9px;
+}
+
+header h1{
+    font-size:calc(2rem + 1vw);
+    color:#FFB951;
+    line-height: 1.1;
+    max-width: 80%;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+header h2{
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section article {
+    width: 16%;
+    margin:1%;
+    padding:1%;
+    background: #403F62;
+    border-radius: 5px 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+section article.cl{
+  color:#FFB951
+}
+
+section article h2{
+    font-size:calc(3rem + 2vw);
+    line-height: 1;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+section article p{
+    font-size:1rem;
+    padding:0.5rem 0;
+}
+
+@media (max-width: 767.98px) {
+
+    header, footer{
+        padding:5%;
+    }
+
+    section article {
+        width: 40%;
+        margin:2%;
+        padding:3%;
+    }
+
+}
+
+main div#mapa {
+    width: 100%;
+    height: 55vh;
+    border-radius: 5px 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin:1%;
+}
+
+footer p{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#opciones{
+    top:1rem;
+    right:1rem;
+    position: fixed;
+    padding:0.25rem 0.5rem 0.25rem 0.25rem;
+    border-radius: 5px 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
